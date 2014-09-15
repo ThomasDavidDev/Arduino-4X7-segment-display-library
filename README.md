@@ -15,8 +15,7 @@ see included example
 
 **functions**
 -constructor: Display(short segmentPins[8], short digitPins[4], short timer);
--setNumber(long value)
--setSpecificNumber(short firstDigit, short secondDigit, short thirdDigit, short ffourthDigit)
+-setNumber(long value)-setSpecificNumber(short firstDigit, short secondDigit, short thirdDigit, short ffourthDigit)
 -stop()
 -start()
 

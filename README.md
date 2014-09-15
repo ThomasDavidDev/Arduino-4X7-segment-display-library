@@ -13,7 +13,8 @@ Timer: You can use any timer you want. (for Arduino mega users, uncomment some r
 **Howto use?**
 * see included example
 
-**functions** * constructor: Display(short segmentPins[8], short digitPins[4], short timer);
+**functions** 
+* constructor: Display(short segmentPins[8], short digitPins[4], short timer);
 * setNumber(long value)-setSpecificNumber(short firstDigit, short secondDigit, short thirdDigit, short ffourthDigit)
 * stop()
 * start()

@@ -11,10 +11,9 @@ The number formating: This version of the library makes it possible to print in 
 Timer: You can use any timer you want. (for Arduino mega users, uncomment some rules to use the 3th,4th and 5th timer.)
 
 **Howto use?**
-see included example
+* see included example
 
-**functions**
-* constructor: Display(short segmentPins[8], short digitPins[4], short timer);
+**functions** * constructor: Display(short segmentPins[8], short digitPins[4], short timer);
 * setNumber(long value)-setSpecificNumber(short firstDigit, short secondDigit, short thirdDigit, short ffourthDigit)
 * stop()
 * start()

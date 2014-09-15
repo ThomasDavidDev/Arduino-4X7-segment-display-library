@@ -14,9 +14,9 @@ Timer: You can use any timer you want. (for Arduino mega users, uncomment some r
 see included example
 
 **functions**
-constructor: Display(short segmentPins[8], short digitPins[4], short timer);
-setNumber(long value)-setSpecificNumber(short firstDigit, short secondDigit, short thirdDigit, short ffourthDigit)
-stop()
-start()
+* constructor: Display(short segmentPins[8], short digitPins[4], short timer);
+* setNumber(long value)-setSpecificNumber(short firstDigit, short secondDigit, short thirdDigit, short ffourthDigit)
+* stop()
+* start()
 
 I hope that the library is free of bugs. Feel free to comment and/ or adjust bugs or suggest extra functions And remember, respect the GPL2 license.

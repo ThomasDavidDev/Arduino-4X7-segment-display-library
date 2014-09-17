@@ -4,4 +4,5 @@ stop	KEYWORD2
 start	KEYWORD2
 setNumber	KEYWORD2
 setSpecificNumber	KEYWORD2
+setSpecificDot	KEYWORD2
 active	KEYWORD2

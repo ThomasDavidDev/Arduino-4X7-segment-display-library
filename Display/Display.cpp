@@ -226,12 +226,12 @@ void Display::update(){
 	digitalWrite(_digitPins[pos], 0);
 }
 
-void Display::setSpecificNumber(short a, short b, short c, short d)
+void Display::setSpecificNumber(short aNumber, short bNumber, short cNumber, short dNumber)
 {	
-	specific[4] = a;
-	specific[3] = b;
-	specific[2] = c;
-	specific[1] = d;
+	specific[4] = aNumber;
+	specific[3] = bNumber;
+	specific[2] = cNumber;
+	specific[1] = dNumber;
 	for (short i = 0; i < 5; i++){
 		if (specific[i]>9){//Err
 			dispArray[1] = 13;
@@ -245,6 +245,19 @@ void Display::setSpecificNumber(short a, short b, short c, short d)
 		}
 	}
 }
+
+void Display::setSpecificDot(bool aDot, bool bDot, bool cDot, bool dDot)
+{
+	if (aDot){ combs[dispArray[4]] &= 0b01111111; }
+	else { (combs[dispArray[4]] >> 7) ? : combs[dispArray[4]] += 0b10000000; }
+	if (bDot){ combs[dispArray[3]] &= 0b01111111; }
+	else { (combs[dispArray[3]] >> 7) ? : combs[dispArray[3]] += 0b10000000; }
+	if (cDot){ combs[dispArray[2]] &= 0b01111111; }
+	else { (combs[dispArray[2]] >> 7) ? : combs[dispArray[2]] += 0b10000000; }
+	if (dDot){ combs[dispArray[1]] &= 0b01111111; }
+	else { (combs[dispArray[1]] >> 7) ? : combs[dispArray[1]] += 0b10000000; }
+}
+
 
 //Formatting input to displayable number
 void Display::setNumber(long value)

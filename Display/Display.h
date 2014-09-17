@@ -20,12 +20,13 @@ public:
 	Display(short segmentPins[8], short digitPins[4]); //constructor
 	bool active;
 	void setNumber(long value); //number to show on display
-	void setSpecificNumber(short a, short b, short c, short d);
+	void setSpecificNumber(short aNumber, short bNumber, short cNumber, short dNumber);
+	void setSpecificDot(bool aDot, bool bDot, bool cDot, bool dDot);
 	void stop();  //stop display
 	void start(); //restart display
-	void update(); //caled by interrupts
+	void update(); //called by interrupts
 
-//private:
+private:
 	short specific[4];
 	short buffer;
 	long valueBuffer;

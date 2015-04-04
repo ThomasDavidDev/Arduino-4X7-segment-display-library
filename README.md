@@ -28,3 +28,4 @@ Timer: You can use any timer you want. (for Arduino mega users, uncomment some r
 
 I hope that the library is free of bugs. Feel free to comment and/ or adjust bugs or suggest extra functions And remember, respect the GPL2 license.
 
+When something is useful, give it a star!
